@@ -198,7 +198,7 @@ static const char MVAdPlacementKey;
                 __strong typeof(weakSelf) self = weakSelf;
                 
                 if (image) {
-                    reformedAd.coverImage = image;
+                    reformedAd.iconImage = image;
                     
                     if ((loadImageOption & ZFNativeAdsLoadImageOptionCover) && !reformedAd.coverImage) {
                         return;
