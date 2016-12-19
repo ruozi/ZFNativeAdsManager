@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F78EA74277EB4BFE9C4561C /* libPods-ZFNativeAdsManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C535FE98F9B2028428C66 /* libPods-ZFNativeAdsManagerDemo.a */; };
+		A71BB21A1DF6657200884059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB2191DF6657200884059 /* main.m */; };
+		A71BB21D1DF6657200884059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB21C1DF6657200884059 /* AppDelegate.m */; };
+		A71BB2201DF6657200884059 /* ZFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB21F1DF6657200884059 /* ZFViewController.m */; };
+		A71BB2251DF6657200884059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71BB2241DF6657200884059 /* Assets.xcassets */; };
+		A71BB23A1DF6A50F00884059 /* ZFNativeAdsMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB2341DF6A50F00884059 /* ZFNativeAdsMediator.m */; };
+		A71BB23D1DF6A5AB00884059 /* ZFFBNativeAdsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB23C1DF6A5AB00884059 /* ZFFBNativeAdsManager.m */; };
+		A71BB2421DF6B67200884059 /* ZFReformedNativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB2411DF6B67200884059 /* ZFReformedNativeAd.m */; };
+		A71BB2451DF6B91E00884059 /* ZFNativeAdsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BB2441DF6B91E00884059 /* ZFNativeAdsManager.m */; };
+		A74CB93F1DFC01A70001851D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB93E1DFC01A70001851D /* CoreGraphics.framework */; };
+		A74CB9411DFC021D0001851D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9401DFC021D0001851D /* Foundation.framework */; };
+		A74CB9451DFC022E0001851D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9441DFC022E0001851D /* AdSupport.framework */; };
+		A74CB9471DFC02330001851D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9461DFC02330001851D /* StoreKit.framework */; };
+		A74CB9491DFC023B0001851D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9481DFC023B0001851D /* QuartzCore.framework */; };
+		A74CB94B1DFC02410001851D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB94A1DFC02410001851D /* CoreLocation.framework */; };
+		A74CB94D1DFC024A0001851D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB94C1DFC024A0001851D /* CoreTelephony.framework */; };
+		A74CB94F1DFC02980001851D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB94E1DFC02980001851D /* MobileCoreServices.framework */; };
+		A74CB9511DFC029F0001851D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9501DFC029F0001851D /* Accelerate.framework */; };
+		A74CB9531DFC02A60001851D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9521DFC02A60001851D /* SystemConfiguration.framework */; };
+		A74CB9551DFC02AD0001851D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9541DFC02AD0001851D /* CoreMotion.framework */; };
+		A74CB9571DFC02B10001851D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9561DFC02B10001851D /* AVFoundation.framework */; };
+		A74CB95B1DFC02BE0001851D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB95A1DFC02BE0001851D /* MessageUI.framework */; };
+		A74CB95D1DFC02E30001851D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB95C1DFC02E30001851D /* libz.tbd */; };
+		A74CB95F1DFC03260001851D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB95E1DFC03260001851D /* libsqlite3.tbd */; };
+		A74CB9631DFC17530001851D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74CB9421DFC02240001851D /* UIKit.framework */; };
+		A77B47B91E0438390065E054 /* ZFNativeAdsMediator+Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B47B81E0438390065E054 /* ZFNativeAdsMediator+Facebook.m */; };
+		A77B47BC1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B47BB1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.m */; };
+		A77C61001E04D95700CEA037 /* Target_Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C60FF1E04D95700CEA037 /* Target_Facebook.m */; };
+		A77C61031E04F27100CEA037 /* Target_Mobvista.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C61021E04F27100CEA037 /* Target_Mobvista.m */; };
+		A7C296331DFD3F1100E34C57 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2962C1DFD3F1100E34C57 /* MVSDK.framework */; };
+		A7C296341DFD3F1100E34C57 /* MVSDKAppWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2962D1DFD3F1100E34C57 /* MVSDKAppWall.framework */; };
+		A7C296351DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C296301DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.m */; };
+		A7C296361DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C296321DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EDC957502A7452492C7FB6A /* Pods-ZFNativeAdsManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFNativeAdsManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFNativeAdsManagerDemo/Pods-ZFNativeAdsManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		14D6AE00E6ABFF231B35577F /* Pods-ZFNativeAdsManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFNativeAdsManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFNativeAdsManagerDemo/Pods-ZFNativeAdsManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7E3C535FE98F9B2028428C66 /* libPods-ZFNativeAdsManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZFNativeAdsManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71BB2151DF6657200884059 /* ZFNativeAdsManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFNativeAdsManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71BB2191DF6657200884059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A71BB21B1DF6657200884059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A71BB21C1DF6657200884059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A71BB21E1DF6657200884059 /* ZFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFViewController.h; sourceTree = "<group>"; };
+		A71BB21F1DF6657200884059 /* ZFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFViewController.m; sourceTree = "<group>"; };
+		A71BB2241DF6657200884059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A71BB2291DF6657200884059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71BB2331DF6A50F00884059 /* ZFNativeAdsMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFNativeAdsMediator.h; sourceTree = "<group>"; };
+		A71BB2341DF6A50F00884059 /* ZFNativeAdsMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFNativeAdsMediator.m; sourceTree = "<group>"; };
+		A71BB23B1DF6A5AB00884059 /* ZFFBNativeAdsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFFBNativeAdsManager.h; sourceTree = "<group>"; };
+		A71BB23C1DF6A5AB00884059 /* ZFFBNativeAdsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFFBNativeAdsManager.m; sourceTree = "<group>"; };
+		A71BB23E1DF6AB5C00884059 /* ZFNativeAdsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNativeAdsDefine.h; sourceTree = "<group>"; };
+		A71BB2401DF6B67200884059 /* ZFReformedNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFReformedNativeAd.h; sourceTree = "<group>"; };
+		A71BB2411DF6B67200884059 /* ZFReformedNativeAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFReformedNativeAd.m; sourceTree = "<group>"; };
+		A71BB2431DF6B91E00884059 /* ZFNativeAdsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFNativeAdsManager.h; sourceTree = "<group>"; };
+		A71BB2441DF6B91E00884059 /* ZFNativeAdsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFNativeAdsManager.m; sourceTree = "<group>"; };
+		A74CB93E1DFC01A70001851D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A74CB9401DFC021D0001851D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A74CB9421DFC02240001851D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A74CB9441DFC022E0001851D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A74CB9461DFC02330001851D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A74CB9481DFC023B0001851D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A74CB94A1DFC02410001851D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A74CB94C1DFC024A0001851D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A74CB94E1DFC02980001851D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A74CB9501DFC029F0001851D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A74CB9521DFC02A60001851D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A74CB9541DFC02AD0001851D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A74CB9561DFC02B10001851D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A74CB9581DFC02B90001851D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A74CB95A1DFC02BE0001851D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A74CB95C1DFC02E30001851D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A74CB95E1DFC03260001851D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A74CB9641DFC17C00001851D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A76687051E0778C10014D63D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A77B47B71E0438390065E054 /* ZFNativeAdsMediator+Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFNativeAdsMediator+Facebook.h"; sourceTree = "<group>"; };
+		A77B47B81E0438390065E054 /* ZFNativeAdsMediator+Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFNativeAdsMediator+Facebook.m"; sourceTree = "<group>"; };
+		A77B47BA1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFNativeAdsMediator+Mobvista.h"; sourceTree = "<group>"; };
+		A77B47BB1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFNativeAdsMediator+Mobvista.m"; sourceTree = "<group>"; };
+		A77C60FE1E04D95700CEA037 /* Target_Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Facebook.h; sourceTree = "<group>"; };
+		A77C60FF1E04D95700CEA037 /* Target_Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Facebook.m; sourceTree = "<group>"; };
+		A77C61011E04F27100CEA037 /* Target_Mobvista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Mobvista.h; sourceTree = "<group>"; };
+		A77C61021E04F27100CEA037 /* Target_Mobvista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Mobvista.m; sourceTree = "<group>"; };
+		A7C2962C1DFD3F1100E34C57 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDK.framework; sourceTree = "<group>"; };
+		A7C2962D1DFD3F1100E34C57 /* MVSDKAppWall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVSDKAppWall.framework; sourceTree = "<group>"; };
+		A7C2962F1DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMobvistaNativeAdObserver.h; sourceTree = "<group>"; };
+		A7C296301DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMobvistaNativeAdObserver.m; sourceTree = "<group>"; };
+		A7C296311DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMobvistaNativeAdsManager.h; sourceTree = "<group>"; };
+		A7C296321DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMobvistaNativeAdsManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71BB2121DF6657200884059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74CB9631DFC17530001851D /* UIKit.framework in Frameworks */,
+				A74CB95F1DFC03260001851D /* libsqlite3.tbd in Frameworks */,
+				A74CB95D1DFC02E30001851D /* libz.tbd in Frameworks */,
+				A74CB95B1DFC02BE0001851D /* MessageUI.framework in Frameworks */,
+				A7C296341DFD3F1100E34C57 /* MVSDKAppWall.framework in Frameworks */,
+				A74CB9571DFC02B10001851D /* AVFoundation.framework in Frameworks */,
+				A74CB9551DFC02AD0001851D /* CoreMotion.framework in Frameworks */,
+				A74CB9531DFC02A60001851D /* SystemConfiguration.framework in Frameworks */,
+				A74CB9511DFC029F0001851D /* Accelerate.framework in Frameworks */,
+				A74CB94F1DFC02980001851D /* MobileCoreServices.framework in Frameworks */,
+				A74CB94D1DFC024A0001851D /* CoreTelephony.framework in Frameworks */,
+				A7C296331DFD3F1100E34C57 /* MVSDK.framework in Frameworks */,
+				A74CB94B1DFC02410001851D /* CoreLocation.framework in Frameworks */,
+				A74CB9491DFC023B0001851D /* QuartzCore.framework in Frameworks */,
+				A74CB9471DFC02330001851D /* StoreKit.framework in Frameworks */,
+				A74CB9451DFC022E0001851D /* AdSupport.framework in Frameworks */,
+				A74CB9411DFC021D0001851D /* Foundation.framework in Frameworks */,
+				A74CB93F1DFC01A70001851D /* CoreGraphics.framework in Frameworks */,
+				7F78EA74277EB4BFE9C4561C /* libPods-ZFNativeAdsManagerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D23CF09F0876D3E53AD364 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14D6AE00E6ABFF231B35577F /* Pods-ZFNativeAdsManagerDemo.debug.xcconfig */,
+				0EDC957502A7452492C7FB6A /* Pods-ZFNativeAdsManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A71BB20C1DF6657200884059 = {
+			isa = PBXGroup;
+			children = (
+				A71BB2301DF6A50F00884059 /* ZFNativeAdsManager */,
+				A71BB2171DF6657200884059 /* ZFNativeAdsManagerDemo */,
+				A71BB2161DF6657200884059 /* Products */,
+				05D23CF09F0876D3E53AD364 /* Pods */,
+				CBACE7ED012EB61F74C73ECE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A71BB2161DF6657200884059 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2151DF6657200884059 /* ZFNativeAdsManagerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71BB2171DF6657200884059 /* ZFNativeAdsManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB21B1DF6657200884059 /* AppDelegate.h */,
+				A71BB21C1DF6657200884059 /* AppDelegate.m */,
+				A71BB21E1DF6657200884059 /* ZFViewController.h */,
+				A71BB21F1DF6657200884059 /* ZFViewController.m */,
+				A71BB2241DF6657200884059 /* Assets.xcassets */,
+				A71BB2291DF6657200884059 /* Info.plist */,
+				A71BB2181DF6657200884059 /* Supporting Files */,
+			);
+			path = ZFNativeAdsManagerDemo;
+			sourceTree = "<group>";
+		};
+		A71BB2181DF6657200884059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2191DF6657200884059 /* main.m */,
+				A74CB9641DFC17C00001851D /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A71BB2301DF6A50F00884059 /* ZFNativeAdsManager */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2311DF6A50F00884059 /* Categories */,
+				A71BB2321DF6A50F00884059 /* Mediator */,
+				A71BB2351DF6A50F00884059 /* Platforms */,
+				A71BB23E1DF6AB5C00884059 /* ZFNativeAdsDefine.h */,
+				A71BB2401DF6B67200884059 /* ZFReformedNativeAd.h */,
+				A71BB2411DF6B67200884059 /* ZFReformedNativeAd.m */,
+				A71BB2431DF6B91E00884059 /* ZFNativeAdsManager.h */,
+				A71BB2441DF6B91E00884059 /* ZFNativeAdsManager.m */,
+			);
+			name = ZFNativeAdsManager;
+			path = ../ZFNativeAdsManager;
+			sourceTree = "<group>";
+		};
+		A71BB2311DF6A50F00884059 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A77B47B71E0438390065E054 /* ZFNativeAdsMediator+Facebook.h */,
+				A77B47B81E0438390065E054 /* ZFNativeAdsMediator+Facebook.m */,
+				A77B47BA1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.h */,
+				A77B47BB1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A71BB2321DF6A50F00884059 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2331DF6A50F00884059 /* ZFNativeAdsMediator.h */,
+				A71BB2341DF6A50F00884059 /* ZFNativeAdsMediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		A71BB2351DF6A50F00884059 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2361DF6A50F00884059 /* Facebook */,
+				A7C296291DFD3F1100E34C57 /* Mobvista */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		A71BB2361DF6A50F00884059 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				A71BB2371DF6A50F00884059 /* Action */,
+				A71BB23B1DF6A5AB00884059 /* ZFFBNativeAdsManager.h */,
+				A71BB23C1DF6A5AB00884059 /* ZFFBNativeAdsManager.m */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		A71BB2371DF6A50F00884059 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A77C60FE1E04D95700CEA037 /* Target_Facebook.h */,
+				A77C60FF1E04D95700CEA037 /* Target_Facebook.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		A7C296291DFD3F1100E34C57 /* Mobvista */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2962A1DFD3F1100E34C57 /* Action */,
+				A7C2962B1DFD3F1100E34C57 /* Frameworks */,
+				A7C2962E1DFD3F1100E34C57 /* Observer */,
+				A7C296311DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.h */,
+				A7C296321DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.m */,
+			);
+			path = Mobvista;
+			sourceTree = "<group>";
+		};
+		A7C2962A1DFD3F1100E34C57 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A77C61011E04F27100CEA037 /* Target_Mobvista.h */,
+				A77C61021E04F27100CEA037 /* Target_Mobvista.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		A7C2962B1DFD3F1100E34C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2962C1DFD3F1100E34C57 /* MVSDK.framework */,
+				A7C2962D1DFD3F1100E34C57 /* MVSDKAppWall.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7C2962E1DFD3F1100E34C57 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2962F1DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.h */,
+				A7C296301DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.m */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		CBACE7ED012EB61F74C73ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76687051E0778C10014D63D /* Photos.framework */,
+				A74CB95E1DFC03260001851D /* libsqlite3.tbd */,
+				A74CB95C1DFC02E30001851D /* libz.tbd */,
+				A74CB95A1DFC02BE0001851D /* MessageUI.framework */,
+				A74CB9581DFC02B90001851D /* CoreMedia.framework */,
+				A74CB9561DFC02B10001851D /* AVFoundation.framework */,
+				A74CB9541DFC02AD0001851D /* CoreMotion.framework */,
+				A74CB9521DFC02A60001851D /* SystemConfiguration.framework */,
+				A74CB9501DFC029F0001851D /* Accelerate.framework */,
+				A74CB94E1DFC02980001851D /* MobileCoreServices.framework */,
+				A74CB94C1DFC024A0001851D /* CoreTelephony.framework */,
+				A74CB94A1DFC02410001851D /* CoreLocation.framework */,
+				A74CB9481DFC023B0001851D /* QuartzCore.framework */,
+				A74CB9461DFC02330001851D /* StoreKit.framework */,
+				A74CB9441DFC022E0001851D /* AdSupport.framework */,
+				A74CB9421DFC02240001851D /* UIKit.framework */,
+				A74CB9401DFC021D0001851D /* Foundation.framework */,
+				A74CB93E1DFC01A70001851D /* CoreGraphics.framework */,
+				7E3C535FE98F9B2028428C66 /* libPods-ZFNativeAdsManagerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A71BB2141DF6657200884059 /* ZFNativeAdsManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71BB22C1DF6657200884059 /* Build configuration list for PBXNativeTarget "ZFNativeAdsManagerDemo" */;
+			buildPhases = (
+				B9D6DDD7F8DAF8972504212C /* [CP] Check Pods Manifest.lock */,
+				A71BB2111DF6657200884059 /* Sources */,
+				A71BB2121DF6657200884059 /* Frameworks */,
+				A71BB2131DF6657200884059 /* Resources */,
+				ABE81838C1BB457F83D5FEF6 /* [CP] Embed Pods Frameworks */,
+				811AAF5E99EF147ADC673AC8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFNativeAdsManagerDemo;
+			productName = ZFNativeAdsManagerDemo;
+			productReference = A71BB2151DF6657200884059 /* ZFNativeAdsManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71BB20D1DF6657200884059 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Ruozi;
+				TargetAttributes = {
+					A71BB2141DF6657200884059 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A71BB2101DF6657200884059 /* Build configuration list for PBXProject "ZFNativeAdsManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A71BB20C1DF6657200884059;
+			productRefGroup = A71BB2161DF6657200884059 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A71BB2141DF6657200884059 /* ZFNativeAdsManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A71BB2131DF6657200884059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71BB2251DF6657200884059 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		811AAF5E99EF147ADC673AC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFNativeAdsManagerDemo/Pods-ZFNativeAdsManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE81838C1BB457F83D5FEF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFNativeAdsManagerDemo/Pods-ZFNativeAdsManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D6DDD7F8DAF8972504212C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71BB2111DF6657200884059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77C61001E04D95700CEA037 /* Target_Facebook.m in Sources */,
+				A77C61031E04F27100CEA037 /* Target_Mobvista.m in Sources */,
+				A7C296351DFD3F1100E34C57 /* ZFMobvistaNativeAdObserver.m in Sources */,
+				A71BB23A1DF6A50F00884059 /* ZFNativeAdsMediator.m in Sources */,
+				A77B47BC1E04385D0065E054 /* ZFNativeAdsMediator+Mobvista.m in Sources */,
+				A77B47B91E0438390065E054 /* ZFNativeAdsMediator+Facebook.m in Sources */,
+				A71BB2201DF6657200884059 /* ZFViewController.m in Sources */,
+				A71BB21D1DF6657200884059 /* AppDelegate.m in Sources */,
+				A71BB2451DF6B91E00884059 /* ZFNativeAdsManager.m in Sources */,
+				A7C296361DFD3F1100E34C57 /* ZFMobvistaNativeAdsManager.m in Sources */,
+				A71BB23D1DF6A5AB00884059 /* ZFFBNativeAdsManager.m in Sources */,
+				A71BB21A1DF6657200884059 /* main.m in Sources */,
+				A71BB2421DF6B67200884059 /* ZFReformedNativeAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A71BB22A1DF6657200884059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A71BB22B1DF6657200884059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A71BB22D1DF6657200884059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D6AE00E6ABFF231B35577F /* Pods-ZFNativeAdsManagerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FBAudienceNetwork\"",
+					"$(PROJECT_DIR)/../ZFNativeAdsManager/Platforms/Mobvista/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZFNativeAdsManagerDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = ZFNativeAdsManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruozi.ZFNativeAdsManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A71BB22E1DF6657200884059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDC957502A7452492C7FB6A /* Pods-ZFNativeAdsManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FBAudienceNetwork\"",
+					"$(PROJECT_DIR)/../ZFNativeAdsManager/Platforms/Mobvista/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZFNativeAdsManagerDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = ZFNativeAdsManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruozi.ZFNativeAdsManagerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A71BB2101DF6657200884059 /* Build configuration list for PBXProject "ZFNativeAdsManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71BB22A1DF6657200884059 /* Debug */,
+				A71BB22B1DF6657200884059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71BB22C1DF6657200884059 /* Build configuration list for PBXNativeTarget "ZFNativeAdsManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71BB22D1DF6657200884059 /* Debug */,
+				A71BB22E1DF6657200884059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A71BB20D1DF6657200884059 /* Project object */;
+}

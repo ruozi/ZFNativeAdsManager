@@ -1,0 +1,8 @@
+Pods/
+xcuserdata/
+.DS_Store
+Podfile.lock
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
