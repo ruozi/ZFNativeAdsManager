@@ -98,9 +98,13 @@ static const char MVAdPlacementKey;
 - (ZFReformedNativeAd *)fetchNativeAd:(NSString *)placementKey {
     
     NSMutableSet<ZFReformedNativeAd *> *reformedAdsPool = [self.reformedAdsCachePool objectForKey:placementKey];
-    ZFReformedNativeAd *reformedAd = [reformedAdsPool anyObject];
+    NSArray<ZFReformedNativeAd *> *loadedReformedAds = [reformedAdsPool allObjects];
     
-    if (reformedAd) {
+    ZFReformedNativeAd *reformedAd = nil;
+    if ([loadedReformedAds count] > 0) {
+        NSUInteger randomIndex = arc4random() % [loadedReformedAds count];
+        reformedAd = [loadedReformedAds objectAtIndex:randomIndex];
+    
         [reformedAdsPool removeObject:reformedAd];
         [self.reformedAdsCachePool setObject:reformedAdsPool forKey:placementKey];
     }
@@ -151,7 +155,7 @@ static const char MVAdPlacementKey;
         
         objc_setAssociatedObject(reformedAd, &MVReformAdKey, campaign, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         objc_setAssociatedObject(reformedAd, &MVAdPlacementKey, placementKey, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        
+       
         if (loadImageOption == ZFNativeAdsLoadImageOptionNone) {
             
             [[self.reformedAdsCachePool objectForKey:placementKey] addObject:reformedAd];
@@ -161,7 +165,7 @@ static const char MVAdPlacementKey;
                 [self.delegate nativeAdDidLoad:ZFNativeAdsPlatformMobvista placement:placementKey];
             }
             
-            return;
+            continue;
         }
         
         if (loadImageOption == ZFNativeAdsLoadImageOptionCover) {
@@ -188,7 +192,7 @@ static const char MVAdPlacementKey;
                 }
             }];
             
-            return;
+            continue;
         }
         
         if (loadImageOption == ZFNativeAdsLoadImageOptionIcon) {
