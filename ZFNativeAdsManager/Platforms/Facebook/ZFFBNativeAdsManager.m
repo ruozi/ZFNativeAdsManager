@@ -121,6 +121,10 @@ static const char FBReformAdKey;
         objc_setAssociatedObject(reformedAd, &FBReformAdKey, nativeAd, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
         NSString *placementKey = [self placementKeyForPlacementId:nativeAd.placementID];
+        if (!placementKey) {
+            return;
+        }
+        
         ZFNativeAdsLoadImageOption loadImageOption = [[self.loadImageIndicator valueForKey:placementKey] unsignedIntegerValue];
         
         if (loadImageOption == ZFNativeAdsLoadImageOptionNone) {
